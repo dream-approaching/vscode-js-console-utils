@@ -1,33 +1,7 @@
-## vscode-js-console-utils
+Fork from [vscode-js-console-utils](https://github.com/whtouche/vscode-js-console-utils)
 
-Easily insert and remove console.log statements, by [@whtouche](https://twitter.com/whtouche)
+增加了 console.log 的颜色
 
-![](https://i.imgur.com/0tiesd2.gif)
+快捷键 cmd + shift + l
 
-## Installing
-
-This extension is available for free in the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=whtouche.vscode-js-console-utils)
-
-## Usage
-
-With selection:
-* Highlight a variable (or really any text)
-* Press Cmd+Shift+L
-* The output (on a new line) will be: console.log('variable: ', variable);
-
-Without selection:
-* Press Cmd+Shift+L
-* The output (on the same line) will be: console.log();
-
-To remove console.logs:
-* Press Cmd+Shift+D
-* This will delete all console.log statements in the current document
-
-## To Do
-* Add support for other console.* methods (warn, error, time, timeEnd, etc)
-* Add ability to delete console.* across project (currently just the open file)
-* ~~When deleting console.*, report how many were deleted~~, across how many files
-* Allow configuration to only delete certain types of console.* statements
-
-## License
-[MIT License](LICENSE)
+参考[VSCode 折腾 log 插件](https://juejin.im/post/5c1e2612e51d452aaa7c43fe)

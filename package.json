@@ -9,7 +9,7 @@
     "vscode": "^1.5.0"
   },
   "categories": ["Other"],
-  "icon": "https://zhengjinshou.cn/other/log.png",
+  "icon": "images/log.png",
   "activationEvents": [
     "onCommand:extension.insertLogStatement",
     "onCommand:extension.deleteAllLogStatements"

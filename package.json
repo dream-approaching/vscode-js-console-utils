@@ -2,13 +2,15 @@
   "name": "console-utils-fork",
   "displayName": "console log quickly",
   "description": "Help insert and remove console.(*) statements",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "longzi",
   "repository": "https://github.com/dream-approaching/vscode-js-console-utils",
   "engines": {
     "vscode": "^1.5.0"
   },
-  "categories": ["Other"],
+  "categories": [
+    "Other"
+  ],
   "icon": "images/log.png",
   "activationEvents": [
     "onCommand:extension.insertLogStatement",
@@ -16,32 +18,32 @@
   ],
   "main": "./extension",
   "contributes": {
-		"configuration": {
+    "configuration": {
       "type": "object",
       "title": "Console utils",
       "properties": {
-          "consoleUtils.namePrefix": {
-              "type": "string",
-              "default": " ",
-              "description": "名字前缀"
-          },
-          "consoleUtils.color": {
-              "type": "string",
-              "default": "#0e93e0",
-              "description": "字体颜色"
-          },
-          "consoleUtils.colorBg": {
-              "type": "string",
-              "default": "#aaefe5",
-              "description": "背景颜色"
-          },
-          "consoleUtils.showSemi": {
-              "type": "boolean",
-              "default": true,
-              "description": "末尾是否加分号"
-          }
+        "consoleUtils.namePrefix": {
+          "type": "string",
+          "default": " ",
+          "description": "名字前缀"
+        },
+        "consoleUtils.color": {
+          "type": "string",
+          "default": "#0e93e0",
+          "description": "字体颜色"
+        },
+        "consoleUtils.colorBg": {
+          "type": "string",
+          "default": "#aaefe5",
+          "description": "背景颜色"
+        },
+        "consoleUtils.showSemi": {
+          "type": "boolean",
+          "default": true,
+          "description": "末尾是否加分号"
+        }
       }
-  },
+    },
     "commands": [
       {
         "command": "extension.insertLogStatement",
@@ -67,11 +69,11 @@
     ],
     "menus": {
       "editor/context": [
-          {
-              "when": "editorFocus",
-              "command": "extension.insertLogStatement",
-              "group": "navigation"
-          }
+        {
+          "when": "editorFocus",
+          "command": "extension.insertLogStatement",
+          "group": "navigation"
+        }
       ]
     }
   },

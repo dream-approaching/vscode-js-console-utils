@@ -1,20 +1,47 @@
 {
-  "name": "vscode-js-console-utils",
+  "name": "console-utils-fork",
   "displayName": "javascript console utils",
   "description": "Help insert and remove console.(*) statements",
-  "version": "0.8.3",
-  "publisher": "whtouche",
-  "repository": "https://github.com/whtouche/vscode-js-console-utils",
+  "version": "0.1.0",
+  "publisher": "longzi",
+  "repository": "https://github.com/dream-approaching/vscode-js-console-utils",
   "engines": {
     "vscode": "^1.5.0"
   },
   "categories": ["Other"],
+  "icon": "https://raw.githubusercontent.com/dream-approaching/vscode-js-console-utils/master/images/log.png",
   "activationEvents": [
     "onCommand:extension.insertLogStatement",
     "onCommand:extension.deleteAllLogStatements"
   ],
   "main": "./extension",
   "contributes": {
+		"configuration": {
+      "type": "object",
+      "title": "Console utils",
+      "properties": {
+          "consoleUtils.namePrefix": {
+              "type": "string",
+              "default": " ",
+              "description": "名字前缀"
+          },
+          "consoleUtils.color": {
+              "type": "string",
+              "default": "#0e93e0",
+              "description": "字体颜色"
+          },
+          "consoleUtils.colorBg": {
+              "type": "string",
+              "default": "#aaefe5",
+              "description": "背景颜色"
+          },
+          "consoleUtils.showSemi": {
+              "type": "boolean",
+              "default": true,
+              "description": "末尾是否加分号"
+          }
+      }
+  },
     "commands": [
       {
         "command": "extension.insertLogStatement",
@@ -37,7 +64,16 @@
         "key": "shift+ctrl+d",
         "mac": "shift+cmd+d"
       }
-    ]
+    ],
+    "menus": {
+      "editor/context": [
+          {
+              "when": "editorFocus",
+              "command": "extension.insertLogStatement",
+              "group": "navigation"
+          }
+      ]
+    }
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",

@@ -55,11 +55,14 @@ function activate(context) {
 
     const selection = editor.selection;
     const text = editor.document.getText(selection);
-
+    const color = vscode.workspace.getConfiguration().get('consoleUtils.color');
+    const colorBg = vscode.workspace.getConfiguration().get('consoleUtils.colorBg');
+    const name = vscode.workspace.getConfiguration().get('consoleUtils.namePrefix');
+    const showSemi = vscode.workspace.getConfiguration().get('consoleUtils.showSemi');
     text
       ? vscode.commands.executeCommand('editor.action.insertLineAfter').then(() => {
           const str = `${text}`.replace(/\'|\"/g, '');
-          const logToInsert = `console.log('%c${str}:', 'color: #0e93e0;background: #aaefe5;', ${text});`;
+          const logToInsert = `console.log('%c${name} ${str}:', 'color: ${color};background: ${colorBg};', ${text})${showSemi ? ';' : ''}`;
 
           insertText(logToInsert);
         })

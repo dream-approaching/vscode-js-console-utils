@@ -4,11 +4,11 @@ Fork from [vscode-js-console-utils](https://github.com/whtouche/vscode-js-consol
 
 ### 使用方式
 1. 快捷键 cmd/ctrl + shift + L
-2. 右键菜单
+2. 右键菜单  
     ![](https://zhengjinshou.cn/other/contentMenu.png)
 
-### 修改配置
-![](https://zhengjinshou.cn/other/images/set.png)
+### 修改配置  
+![](https://zhengjinshou.cn/other/set.png)
 
 
 

@@ -1,8 +1,8 @@
 {
   "name": "console-utils-fork",
-  "displayName": "javascript console utils",
+  "displayName": "console log quickly",
   "description": "Help insert and remove console.(*) statements",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "longzi",
   "repository": "https://github.com/dream-approaching/vscode-js-console-utils",
   "engines": {

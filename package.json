@@ -9,7 +9,7 @@
     "vscode": "^1.5.0"
   },
   "categories": ["Other"],
-  "icon": "https://raw.githubusercontent.com/dream-approaching/vscode-js-console-utils/master/images/log.png",
+  "icon": "https://zhengjinshou.cn/other/log.png",
   "activationEvents": [
     "onCommand:extension.insertLogStatement",
     "onCommand:extension.deleteAllLogStatements"

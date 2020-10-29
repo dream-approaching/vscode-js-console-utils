@@ -5,10 +5,10 @@ Fork from [vscode-js-console-utils](https://github.com/whtouche/vscode-js-consol
 ### 使用方式
 1. 快捷键 cmd/ctrl + shift + L
 2. 右键菜单
-    ![](https://raw.githubusercontent.com/dream-approaching/vscode-js-console-utils/master/images/contentMenu.png)
+    ![](https://zhengjinshou.cn/other/contentMenu.png)
 
 ### 修改配置
-![](https://raw.githubusercontent.com/dream-approaching/vscode-js-console-utils/master/images/set.png)
+![](https://zhengjinshou.cn/other/images/set.png)
 
 
 

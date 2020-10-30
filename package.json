@@ -1,5 +1,5 @@
 {
-  "name": "console-utils-fork",
+  "name": "console-log-quickly",
   "displayName": "console log quickly",
   "description": "Help insert and remove console.(*) statements",
   "version": "0.1.4",
